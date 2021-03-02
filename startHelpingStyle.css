@@ -1,25 +1,30 @@
 body {
   background-color: #65B7FF;
-  font-family: sans-serif;
+  
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
-  margin: 0px;
+  
+  font-family: helvetica;
 }
 
 .mainBox {
-  font-size: 24pt;
-  padding-left: 400px;
-  padding-right: 100px;
   margin: 0px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  
+  font-size: 20pt;
 }
 
 .navigationMenu {
   background-color: white;
-  padding:10px;
-  width: 250px;
-  left: 0px;
-  top: 0px;
-  position: fixed;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
   font-size: 32pt;
   font-weight: bold;
 }
@@ -31,15 +36,16 @@ a {
 
 .twoColumnBox {
   box-sizing: border-box;
-  width: 100%;
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .column {
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0px;
-  width: 49%;
+  display: flex;
+  flex-direction: column;
 }
 
 .linkBox {
@@ -52,22 +58,20 @@ a {
 
 .titleHeader {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Uyghur_protest_Berlin%2C_July_2009_2.jpg');
-  padding-top: 500px;
-  padding-bottom: 25px;
-  padding-left: 250px;
-  margin-bottom: 100px;
-  text-align: center;
-  color: white;
-  font-size: 32pt;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vw;
+  padding-bottom: 5vw;
   background-size: cover;
   background-position: center;
+  color: white;
+  font-size: 32pt;
 }
 
 .bodyParagraph {
   box-sizing: border-box;
-  vertical-align: top;
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -77,9 +81,9 @@ p {
 }
 
 .thumbnailBox {
-  height: 150px;
   display: inline-block;
-  width:150px;
+  width: 150px;
+  height: 150px;
 }
 .thumbnail {
   width: 150px;
